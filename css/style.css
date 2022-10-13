@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+body {
+    background-color: #0d0d0d;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.header {
+    background: url(../img/bg-header2.png);
+    background-size: cover;  
+    background-repeat: no-repeat;
+}
+
+.nav h1 span {
+    color: #8e58a6;
+    font-family: arial;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px 0 50px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    display: inline-block;
+    margin-left: 25px;
+    border: 2px solid transparent;
+    transition: .5s ease-in-out;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #0d0d0d;
+}
+
+header .container {
+    height: 80vh;
+}
+
+header .container span:first-child {
+    font-size: 15px;
+}
+
+header .container span:nth-child(3) {
+    color: #8e58a6;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.container {
+    max-width: 950px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main {
+    padding: 80px 0;
+}
+
+main img {
+    max-width: 350px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.buttons a:nth-child(2) {
+    transition: all .5s ease-in-out;
+    display: inline-block;
+    background-color: #8e58a6;
+    border-radius: 5px;
+    padding: 12px 50px;
+}
+
+.buttons a:nth-child(2):hover {
+    transform: scale(1.2); 
+}
+
+.buttons a:nth-child(1) {
+    transition: all .5s ease-in-out;
+    display: inline-block;
+    border: 2px solid #8e58a6;
+    color: #8e58a6;
+    margin-right: 30px;
+    border-radius: 5px;
+    padding: 12px 30px;
+}
+
+.buttons a:nth-child(1):hover{ 
+    transform: scale(1.2); 
+}
+
+main div {
+    max-width: 450px;
+    font-weight: 300;
+}
+
+.linha-vertical {
+    border-bottom: 3px solid #8e58a6;
+    margin-bottom: 20px;
+    max-width: 75px;
+}
+
+main p {
+    margin-bottom: 40px;
+}
+
+#habilidades, #sobre, #servicos, #portfolio {
+    margin-bottom: 100px;
+}
+
+#habilidades > div:first-child,
+#servicos > div:first-child,
+#portfolio > div:first-child,
+#contato > div:first-child,
+#portfolio > div:first-child,
+#habilidades .linha-vertical,
+#servicos .linha-vertical,
+#portfolio .linha-vertical,
+#contato .linha-vertical,
+#portfolio .linha-vertical {
+    margin: 0 auto;
+}
+
+#habilidades .linha-vertical,
+#servicos .linha-vertical,
+#portfolio .linha-vertical,
+#contato .linha-vertical {
+    margin-bottom: 80px;
+}
+
+.habilidades, .servicos, .contato {
+    display: flex;
+    align-items: baseline;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.habilidades div {
+    max-width: 230px;
+}
+
+.habilidades img {
+    max-width: 30%;
+}
+
+h3 {
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.servicos {
+    justify-content: center;
+}
+
+.servicos img {
+    max-width: 25%;
+}
+
+.servicos div {
+    max-width: 350px;
+}
+
+.portfolio {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.portfolio ul li {
+    margin: 0 10px;
+    background-color: #808080;
+    padding: 10px 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.portfolio ul li.active {
+    background-color: #8e58a6;
+}
+
+.tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.itemBox {
+    margin: 0 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.contato {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.contato div {
+    max-width: 400px;
+}
+
+.contato img {
+    max-width: 12%;
+    margin-left: 5px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    display: inline-block;
+}
+
+.contato img:hover {
+    transform: scale(1.2); 
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
