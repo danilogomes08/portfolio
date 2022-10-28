@@ -94,7 +94,7 @@ main img {
     display: inline-block;
     background-color: #8e58a6;
     border-radius: 5px;
-    padding: 12px 50px;
+    padding: 14px 50px;
 }
 
 .buttons a:nth-child(2):hover {
@@ -212,6 +212,11 @@ h3 {
     padding: 10px 25px;
     margin-bottom: 10px;
     cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.portfolio ul li:hover {
+    background-color: #987ea3;
 }
 
 .portfolio ul li.active {
@@ -221,14 +226,23 @@ h3 {
 .tecnologias {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     flex-wrap: wrap;
     max-width: 80%;
     margin: 0 auto;
 }
 
 .itemBox {
-    margin: 0 20px;
+    margin: 25px 20px;
+    text-align: center;
+}
+
+.itemBox a {
+    transition: all .5s ease-in-out;
+}
+
+.itemBox a:hover {
+    color: #8e58a6
 }
 
 .hide {
