@@ -242,6 +242,18 @@ main p {
     max-width: 230px;
 }
 
+@media only screen and (max-width: 768px) { 
+    .habilidades {
+        margin-bottom: 0;
+    }
+    
+    .habilidades div {
+        max-width: 200px;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+}
+
 .habilidades img {
     max-width: 30%;
 }
@@ -308,6 +320,12 @@ h3 {
 .itemBox {
     margin: 25px 20px;
     text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .tecnologias {
+        max-width: 100%;
+    }
 }
 
 .itemBox a {
