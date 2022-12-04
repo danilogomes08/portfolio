@@ -8,11 +8,12 @@
     text-decoration: none;
     list-style: none;
     color: #fff;
-    overflow-x: hidden;
 }
 
 body {
     background-color: #0d0d0d;
+    overflow-x: hidden;
+
 }
 
 h2 {
@@ -42,9 +43,8 @@ h2 {
 
 nav a {
     text-decoration: none;
-    margin-left: 20px;
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 20px;
     border: 2px solid transparent;
     transition: .5s ease-in-out;
 }
@@ -66,96 +66,8 @@ nav a:hover {
     background-color: #8e58a6;
 }
 
-@media only screen and (max-width: 768px) {
-    .nav {
-        position: fixed;
-        display: flex;
-        justify-content: space-between;
-        background-color: #0d0d0d;
-        width: 100%;
-        align-items: center;
-        padding-bottom: 20px;
-    }
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 80px;
-        flex-direction: column;
-        background-color: #8e58a6;
-        width: 100%;
-        height: 90vh;
-        justify-content: center;
-        text-align: center;
-        transition: all .7s ease-in-out;
-        font-size: 1.5rem;
-    }
-
-    .nav-item, .nav-item:hover {
-        border: none;
-    } 
-
-    .nav-menu.active {
-        left: 0
-    }
-
-        .nav-item {
-            margin: 20px 0;
-        }
-
-    .nav-item a {
-        font-size: 1.5rem;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-}
-
 section .container {
     height: 80vh;
-}
-
-@media only screen and (max-width: 768px) {
-    section .container {
-        height: 40vh;
-    }
-    .main {
-        background: #0d0d0d;
-    }
-    #sobre, section .container p {
-        padding: 0px 20px;
-    }
-    #sobre img {
-        margin-bottom: 20px;
-    }
-
-    .buttons {
-        justify-content: center;
-    }
-
-    .buttons a:nth-child(2) {
-        padding: 14px 40px !important;
-    }
-    .buttons a:nth-child(1) {
-        padding: 12px 20px !important; 
-    }
-    .redessocial {
-        margin-top: 20px;
-    }
 }
 
 section .container span:first-child {
@@ -188,7 +100,7 @@ main img {
 .buttons {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
+    max-width: 100%;  
 }
 
 .buttons a:nth-child(2) {
@@ -196,7 +108,7 @@ main img {
     display: inline-block;
     background-color: #8e58a6;
     border-radius: 5px;
-    padding: 14px 50px;
+    padding: 14px 40px;
 }
 
 .buttons a:nth-child(2):hover {
@@ -271,18 +183,6 @@ main p {
     max-width: 230px;
 }
 
-@media only screen and (max-width: 768px) { 
-    .habilidades {
-        margin-bottom: 0;
-    }
-    
-    .habilidades div {
-        max-width: 200px;
-        margin-bottom: 30px;
-        padding: 0 15px;
-    }
-}
-
 .habilidades img {
     max-width: 30%;
 }
@@ -351,12 +251,6 @@ h3 {
     text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-    .tecnologias {
-        max-width: 100%;
-    }
-}
-
 .itemBox a {
     transition: all .5s ease-in-out;
 }
@@ -395,4 +289,116 @@ h3 {
 footer {
     text-align: center;
     margin-bottom: 20px;
+}
+
+/* media query */
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        background-color: #0d0d0d;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        background-color: #8e58a6;
+        width: 100%;
+        height: 90vh;
+        justify-content: center;
+        text-align: center;
+        transition: all .7s ease-in-out;
+        font-size: 1.5rem;
+    }
+
+    .nav-item, .nav-item:hover {
+        border: none;
+    } 
+
+    .nav-menu.active {
+        left: 0
+    }
+
+    .nav-item {
+        margin: 20px 0;
+    }
+
+    .nav-item a {
+        font-size: 1.5rem;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    section .container {
+        height: 40vh;
+    }
+
+    .main {
+        background: #0d0d0d;
+    }
+
+    #sobre, section .container p {
+        padding: 0px 20px;
+    }
+
+    #sobre img {
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .buttons a:nth-child(2) {
+        padding: 14px 40px !important;
+    }
+
+    .buttons a:nth-child(1) {
+        padding: 12px 20px !important; 
+    }
+
+    .redessocial {
+        margin-top: 20px;
+    }
+
+    main img {
+        margin: 0 auto;
+    }
+
+    .tecnologias {
+        max-width: 100%;
+    }
+
+    .habilidades {
+        margin-bottom: 0;
+    }
+    
+    .habilidades div {
+        max-width: 200px;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+
 }
