@@ -19,7 +19,7 @@ h2 {
     font-size: 3rem;
 }
 
-.header {
+.main {
     background: url(../img/bg-header2.png);
     background-size: cover;  
     background-repeat: no-repeat;
@@ -79,7 +79,7 @@ nav a:hover {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 90px;
+        top: 80px;
         flex-direction: column;
         background-color: #8e58a6;
         width: 100%;
@@ -125,15 +125,44 @@ nav a:hover {
 
 }
 
-header .container {
+section .container {
     height: 80vh;
 }
 
-header .container span:first-child {
+@media only screen and (max-width: 768px) {
+    section .container {
+        height: 40vh;
+    }
+    .main {
+        background: #0d0d0d;
+    }
+    #sobre, section .container p {
+        padding: 0px 20px;
+    }
+    #sobre img {
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .buttons a:nth-child(2) {
+        padding: 14px 40px !important;
+    }
+    .buttons a:nth-child(1) {
+        padding: 12px 20px !important; 
+    }
+    .redessocial {
+        margin-top: 20px;
+    }
+}
+
+section .container span:first-child {
     font-size: 15px;
 }
 
-header .container span:nth-child(3) {
+section .container span:nth-child(3) {
     color: #8e58a6;
     font-weight: 600;
     font-size: 3rem;
