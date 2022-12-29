@@ -184,7 +184,7 @@ main p {
 }
 
 .habilidades img {
-    max-width: 30%;
+    max-width: 60%;
 }
 
 h3 {
@@ -396,9 +396,8 @@ footer {
     }
     
     .habilidades div {
-        max-width: 200px;
         margin-bottom: 30px;
-        padding: 0 15px;
+        padding: 0 50px;
     }
 
 }
